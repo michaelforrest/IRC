@@ -77,6 +77,7 @@ public class IRCServer {
         task.resume()
         read()
         
+        send("PASS \(user.password)")
         send("USER \(user.username) 0 * :\(user.realName)")
         send("NICK \(user.nick)")
     }
