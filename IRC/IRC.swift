@@ -12,12 +12,7 @@ public struct IRCUser {
     public let username: String
     public let realName: String
     public let nick: String
-    
-    public init(username: String, realName: String, nick: String) {
-        self.username = username
-        self.realName = realName
-        self.nick = nick
-    }
+    public let password: String
 }
 
 public class IRCChannel {
